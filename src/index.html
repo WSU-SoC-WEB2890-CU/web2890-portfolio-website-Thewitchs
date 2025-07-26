@@ -12,16 +12,104 @@
 </head>
 
 <body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Portfolio Website
-  </h1>
+   <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">MyPortfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+
+        <!-- Dropdown for Portfolio -->
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" id="portfolioDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Portfolio
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+            <li><a class="dropdown-item" href="portfolio.html">All Projects</a></li>
+            <li><a class="dropdown-item" href="case.html">Case Study</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Home Page Content -->
+  <main class="container my-5">
+
+    <!-- Intro Section -->
+    <section class="text-center mb-5">
+      <h1>Hi, I'm Lillian Buck</h1>
+      <p class="lead">A passionate developer and designer crafting engaging digital experiences.</p>
+      <a href="portfolio.html" class="btn btn-primary btn-lg">View My Work</a>
+    </section>
+
+    <!-- Thumbnail Gallery (3 x 2 grid) -->
+    <section>
+      <div class="row g-4">
+        <!-- Repeat for each project -->
+        <div class="col-md-4">
+          <a href="projects/p1.html" class="text-decoration-none text-dark">
+            <img src="https://via.placeholder.com/350x200" alt="Project 1" class="img-fluid project-thumbnail rounded" />
+            <h3 class="mt-2">Clothes For You</h3>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="projects/p2.html" class="text-decoration-none text-dark">
+            <img src="https://via.placeholder.com/350x200" alt="Project 2" class="img-fluid project-thumbnail rounded" />
+            <h3 class="mt-2">StarWorm Art</h3>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="projects/p3.html" class="text-decoration-none text-dark">
+            <img src="https://via.placeholder.com/350x200" alt="Project 3" class="img-fluid project-thumbnail rounded" />
+            <h3 class="mt-2">Coffee</h3>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="projects/p4.html" class="text-decoration-none text-dark">
+            <img src="https://via.placeholder.com/350x200" alt="Project 4" class="img-fluid project-thumbnail rounded" />
+            <h3 class="mt-2">Project Four</h3>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="projects/p5.html" class="text-decoration-none text-dark">
+            <img src="https://via.placeholder.com/350x200" alt="Project 5" class="img-fluid project-thumbnail rounded" />
+            <h3 class="mt-2">Project Five</h3>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="projects/p6.html" class="text-decoration-none text-dark">
+            <img src="https://via.placeholder.com/350x200" alt="Project 6" class="img-fluid project-thumbnail rounded" />
+            <h3 class="mt-2">Project Six</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Lillian Buck. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script type="module" src="./javascripts/main.js"></script>
 </body>
