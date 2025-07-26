@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="TODO: Portfolio website ...">
+
+  <link rel="stylesheet" href="./stylesheets/main.scss">
+</head>
+
+<body>
+   <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">MyPortfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+
+        <!-- Dropdown for Portfolio -->
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" id="portfolioDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Portfolio
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+            <li><a class="dropdown-item" href="portfolio.html">All Projects</a></li>
+            <li><a class="dropdown-item" href="case.html">Case Study</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Case Study Content -->
+<div class="container py-5">
+  <h1 class="mb-4">Case Study: StarWorm Art</h1>
+  <img src="https://via.placeholder.com/1000x400?text=Project+Hero+Image" class="img-fluid rounded mb-4" alt="Hero Image">
+
+  <!-- Overview -->
+  <section>
+    <h2 class="section-title">Overview</h2>
+    <p><strong>Problem:</strong> Many local artists struggle to showcase their work online without expensive platforms or galleries.  
+    <br><strong>Solution:</strong> I designed and developed a responsive portfolio template specifically for independent artists, enabling them to easily share and organize their work online.</p>
+  </section>
+
+  <!-- Audience -->
+  <section>
+    <h2 class="section-title">Audience</h2>
+    <p>This project is for independent visual artists, illustrators, and designers who want a clean, minimal, and customizable digital presence without relying on third-party platforms like Etsy or Instagram alone.</p>
+  </section>
+
+  <!-- Process -->
+  <section>
+    <h2 class="section-title">Process</h2>
+    <h5>Sketches & Wireframes</h5>
+    <p>I started by sketching multiple layout options and tested them with peers. From there, I moved to wireframes in Figma to structure the layout hierarchy and user flow.</p>
+    <img src="https://via.placeholder.com/800x400?text=Wireframes" class="img-fluid mb-3" alt="Wireframes">
+
+    <h5>Mockups</h5>
+    <p>Once structure was approved, I designed high-fidelity mockups using a clean palette of indigo and soft violet with Montserrat + Roboto for a professional, artsy tone.</p>
+    <img src="https://via.placeholder.com/800x400?text=Final+Mockup" class="img-fluid mb-3" alt="Mockup">
+
+    <h5>User Testing</h5>
+    <p>I tested the prototype with 3 local artists. Feedback focused on clearer CTAs and larger gallery thumbnails. I incorporated changes before development.</p>
+  </section>
+
+  <!-- Tech Stack -->
+  <section>
+    <h2 class="section-title">Tech Stack</h2>
+    <ul>
+      <li><strong>HTML5</strong> for structure</li>
+      <li><strong>CSS + Bootstrap 5</strong> for responsive layout and styling</li>
+      <li><strong>Figma</strong> for design, layout, and prototyping</li>
+      <li><strong>JavaScript</strong> (minor) for interactivity</li>
+    </ul>
+  </section>
+
+  <!-- Reflection -->
+  <section>
+    <h2 class="section-title">Reflection</h2>
+    <p>This was one of the most rewarding projects I’ve worked on. It balanced both design and development and served a real audience. I learned how to iterate quickly with user feedback, improve mobile responsiveness, and build with reuse in mind using Bootstrap components.</p>
+    <p>In the future, I’d like to expand this into a CMS-ready template using something like Webflow or integrating it with a headless CMS like Sanity.</p>
+  </section>
+
+  <!-- Buttons -->
+  <div class="mt-4">
+    <a href="https://live-project-url.com" class="btn btn-primary me-2" target="_blank">View Live</a>
+    <a href="https://github.com/yourusername/project" class="btn btn-outline-dark" target="_blank">View Code</a>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Lillian Buck. All rights reserved.</p>
+
+    </div>
+  </footer>
+
+  <script type="module" src="./javascripts/main.js"></script>
+</body>
+</html>

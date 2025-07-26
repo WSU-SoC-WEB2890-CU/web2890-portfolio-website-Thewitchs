@@ -1,3 +1,85 @@
-/* Your styles go here */
+// _variables.scss
+
+$primary: #4b6b43;        
+$secondary: #c2b280;      
+$light: #f4f1ed;          
+$dark: #2f2e2e;           
+
+$body-color: $dark;
+$body-bg: $light;
+
+$font-family-base: 'Roboto', sans-serif;
+$headings-font-family: 'Playfair Display', serif;
+
+
+
+
+
+
+// _global.scss
+
+body {
+  font-family: $font-family-base;
+  background-color: $body-bg;
+  color: $body-color;
+}
+
+h1, h2, h3, h4 {
+  font-family: $headings-font-family;
+  color: $primary;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+// _navbar.scss
+
+.navbar {
+  background-color: $primary;
+
+  .nav-link {
+    color: white;
+    transition: 0.3s;
+
+    &:hover {
+      color: $secondary;
+    }
+
+    &.active {
+      font-weight: bold;
+      color: $secondary;
+    }
+  }
+}
+
+// _buttons.scss
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+
+  &:hover {
+    background-color: darken($primary, 10%);
+    border-color: darken($primary, 10%);
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary;
+  border-color: $secondary;
+  color: $dark;
+
+  &:hover {
+    background-color: darken($secondary, 10%);
+    border-color: darken($secondary, 10%);
+  }
+}
+
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
