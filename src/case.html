@@ -50,63 +50,77 @@
 </nav>
 
 <!-- Case Study Content -->
-<div class="container py-5">
+<div class="container py-5 case-study-page">
   <h1 class="mb-4">Case Study: StarWorm Art</h1>
-  <img src="https://via.placeholder.com/1000x400?text=Project+Hero+Image" class="img-fluid rounded mb-4" alt="Hero Image">
+  <img src="images/heroimg.png" class="img-fluid rounded mb-4" alt="Hero Image">
 
-  <!-- Overview -->
+   <!-- Overview -->
   <section>
     <h2 class="section-title">Overview</h2>
-    <p><strong>Problem:</strong> Many local artists struggle to showcase their work online without expensive platforms or galleries.  
-    <br><strong>Solution:</strong> I designed and developed a responsive portfolio template specifically for independent artists, enabling them to easily share and organize their work online.</p>
+    <p><strong>Challenge:</strong> The artist needed a single online space that could showcase original art, sell clothing and accessories, offer commissions, and build personal connections with fans. Most available portfolio templates felt too generic or corporate, and none fully reflected the artist’s vibrant, playful brand.  
+    <br><strong>Solution:</strong> I designed and developed a fully responsive, colorful portfolio and shop website using Bootstrap 5 and SASS. The goal was to keep the layout clean for usability while infusing the artist’s signature personality into every page through color, typography, and custom styling.</p>
   </section>
 
   <!-- Audience -->
   <section>
     <h2 class="section-title">Audience</h2>
-    <p>This project is for independent visual artists, illustrators, and designers who want a clean, minimal, and customizable digital presence without relying on third-party platforms like Etsy or Instagram alone.</p>
+    <p>This project was designed for a dual audience:  
+      <ul>
+        <li><strong>Fans and collectors</strong> who want to explore, buy, or commission original work directly from the artist without relying on third-party platforms.</li>
+        <li><strong>Other independent artists</strong> seeking inspiration for how to present their work in a way that’s personal, professional, and uniquely theirs.</li>
+      </ul>
+    </p>
   </section>
 
   <!-- Process -->
   <section>
     <h2 class="section-title">Process</h2>
+
+    <h5>Planning & Concept</h5>
+    <p>I began by working closely with the artist to understand their style, audience, and vision for the site. We identified key goals: a sticky navigation bar for easy access to all sections, bold color usage, and clear calls-to-action for buying or commissioning art. From there, I mapped the site structure to ensure logical navigation between the homepage, portfolio, shop, commissions, about, and contact pages.</p>
+
     <h5>Sketches & Wireframes</h5>
-    <p>I started by sketching multiple layout options and tested them with peers. From there, I moved to wireframes in Figma to structure the layout hierarchy and user flow.</p>
-    <img src="https://via.placeholder.com/800x400?text=Wireframes" class="img-fluid mb-3" alt="Wireframes">
+    <p>Initial sketches focused on the arrangement of artwork, product displays, and the commission request form. I then translated these sketches into wireframes using Figma to refine page layouts and create a smooth, intuitive user flow.</p>
+    <img src="images/wireframe.jpg" class="img-fluid mb-3" alt="Wireframe Designs">
 
-    <h5>Mockups</h5>
-    <p>Once structure was approved, I designed high-fidelity mockups using a clean palette of indigo and soft violet with Montserrat + Roboto for a professional, artsy tone.</p>
-    <img src="https://via.placeholder.com/800x400?text=Final+Mockup" class="img-fluid mb-3" alt="Mockup">
+    <h5>Design & Mockups</h5>
+    <p>For the visual design, I built a cohesive palette using coral (<code>#ff6b6b</code>), lavender (<code>#6b5b95</code>), mint (<code>#88d8b0</code>), and cream (<code>#fff8f0</code>). I paired these colors with bold headings and clear sans-serif body text for readability. The designs showcased large images for the portfolio, grid layouts for the shop, and an inviting commission section.</p>
 
-    <h5>User Testing</h5>
-    <p>I tested the prototype with 3 local artists. Feedback focused on clearer CTAs and larger gallery thumbnails. I incorporated changes before development.</p>
+    <h5>User Testing & Feedback</h5>
+    <p>I tested the prototype with three peers and received valuable feedback:
+      <ul>
+        <li>Make the navigation bar sticky so visitors could quickly jump between sections.</li>
+        <li>Add a review section to the About page to build trust with potential clients.</li>
+        <li>Improve the balance between background color and text color for readability.</li>
+      </ul>
+      I incorporated these changes before moving to development.</p>
   </section>
 
   <!-- Tech Stack -->
   <section>
     <h2 class="section-title">Tech Stack</h2>
     <ul>
-      <li><strong>HTML5</strong> for structure</li>
-      <li><strong>CSS + Bootstrap 5</strong> for responsive layout and styling</li>
-      <li><strong>Figma</strong> for design, layout, and prototyping</li>
-      <li><strong>JavaScript</strong> (minor) for interactivity</li>
+      <li><strong>HTML5</strong> — Semantic structure for accessibility and SEO</li>
+      <li><strong>SCSS + Bootstrap 5</strong> — Framework customization, responsive design, and vibrant styling</li>
+      <li><strong>Figma</strong> — Wireframes, high-fidelity mockups, and design iterations</li>
+      <li><strong>JavaScript</strong> — Interactive features including the commission form and collapsible mobile menu</li>
     </ul>
   </section>
 
   <!-- Reflection -->
   <section>
     <h2 class="section-title">Reflection</h2>
-    <p>This was one of the most rewarding projects I’ve worked on. It balanced both design and development and served a real audience. I learned how to iterate quickly with user feedback, improve mobile responsiveness, and build with reuse in mind using Bootstrap components.</p>
-    <p>In the future, I’d like to expand this into a CMS-ready template using something like Webflow or integrating it with a headless CMS like Sanity.</p>
+    <p>This was one of the most rewarding projects I’ve worked on because it successfully captured both the functional needs and the personality of the artist. I’m proud of how the final site feels inviting, colorful, and personal, without sacrificing usability.  
+    I learned a lot about customizing Bootstrap with SASS, applying a consistent color system across multiple pages, and creating designs that communicate directly to a specific audience.  
+    If I had more time, I’d add a CMS for easy product and artwork updates, as well as implement more interactive elements like hover animations and dynamic filtering for the portfolio gallery.</p>
   </section>
-
+  </div>
   <!-- Buttons -->
-  <div class="mt-4">
-    <a href="https://live-project-url.com" class="btn btn-primary me-2" target="_blank">View Live</a>
-    <a href="https://github.com/yourusername/project" class="btn btn-outline-dark" target="_blank">View Code</a>
+  <div class="container mt-4">
+    <a href="https://starwormproject2.netlify.app/" class="btn btn-primary me-2" target="_blank">View Live</a>
+    <a href="#" class="btn btn-outline-dark" target="_blank">View Code</a>
   </div>
 </div>
-
   <!-- Footer -->
   <footer>
     <div class="container">
@@ -114,6 +128,7 @@
 
     </div>
   </footer>
+
 
   <script type="module" src="./javascripts/main.js"></script>
 </body>

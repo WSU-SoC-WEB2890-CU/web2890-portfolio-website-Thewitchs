@@ -13,23 +13,41 @@
 
 <body>
    <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">MyPortfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
-        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">MyPortfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+
+        <!-- Dropdown for Portfolio -->
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" id="portfolioDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Portfolio
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+            <li><a class="dropdown-item" href="portfolio.html">All Projects</a></li>
+            <li><a class="dropdown-item" href="case.html">Case Study</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
     <!-- Contact Section -->
   <section class="py-5">
@@ -42,12 +60,12 @@
 
           <form>
             <div class="mb-3">
-              <label for="name" class="form-label">Your Name</label>
+              <label for="name" class="form-label">Lillian Buck</label>
               <input type="text" class="form-control" id="name" placeholder="Jane Doe" required>
             </div>
             <div class="mb-3">
-              <label for="email" class="form-label">Your Email</label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+              <label for="email" class="form-label">lillianbuck@mail.weber.edu</label>
+              <input type="email" class="form-control" id="email" placeholder="lillianbuck@mail.weber.edu" required>
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Your Message</label>
