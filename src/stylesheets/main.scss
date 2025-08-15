@@ -1,3 +1,202 @@
-/* Your styles go here */
+// _variables.scss
+
+$primary: #4b6b43;        
+$secondary: #c2b280;      
+$light: #f4f1ed;          
+$dark: #2f2e2e;           
+
+$body-color: $dark;
+$body-bg: $light;
+
+$font-family-base: 'Roboto', sans-serif;
+$headings-font-family: 'Playfair Display', serif;
+
+
+
+
+
+
+// global
+
+body {
+  font-family: $font-family-base;
+  background-color: $body-bg;
+  color: $body-color;
+  p{
+    font-size: 18px;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-family: $headings-font-family;
+  color: $primary;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+// navbar
+
+.navbar {
+  background-color: $primary;
+
+  .nav-link {
+    color: $light;
+
+    &:hover,
+    &.active {
+      color: $secondary;
+      font-weight: bold;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: $primary;
+
+    .dropdown-item {
+      color: $light;
+
+      &:hover {
+        background-color: $secondary;
+        color: $dark;
+      }
+    }
+  }
+}
+
+// thumbnails
+
+.project {
+  a {
+    text-decoration: none;
+    color: $dark;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      color: $primary; 
+    }
+
+    img {
+      width: 100%;        
+      height: 200px;      
+      object-fit: cover;  
+      border-radius: 0.5rem;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05); 
+      }
+    }
+
+    h3 {
+      margin-top: 0.5rem;
+      color: $primary;
+      font-family: $headings-font-family;
+      transition: color 0.3s ease;
+    }
+  }
+}
+
+
+// buttons
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+
+  &:hover {
+    background-color: darken($primary, 10%);
+    border-color: darken($primary, 10%);
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary;
+  border-color: $secondary;
+  color: $dark;
+
+  &:hover {
+    background-color: darken($secondary, 10%);
+    border-color: darken($secondary, 10%);
+  }
+}
+
+// cards
+
+.project-card{
+  transition: 0.3s ease, box-shadow 0.3s ease;
+
+  .card-img-top{
+    height: 200px;
+    object-fit: cover;
+  }
+
+  &:hover{ 
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+  }
+  
+   .card-title {
+    color: $primary;
+  }
+
+  .card-text {
+    color: $dark;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+}
+
+// forms
+
+.form-control {
+  border: 1px solid $primary;
+  border-radius: 0.25rem;
+
+  &:focus {
+    border-color: $secondary;
+    box-shadow: 0 0 0 0.2rem rgba($secondary, 0.25);
+  }
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+label {
+  font-weight: 500;
+}
+
+
+
+// footer
+
+footer{
+  background-color: $dark;
+  color: $light;
+  text-align: center;
+  padding: 1.5rem 0;
+
+  a{
+    color: $secondary;
+
+    &:hover{
+      color: lighten($secondary, 10%);
+    }
+  }
+}
+
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";

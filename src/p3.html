@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="TODO: Portfolio website ...">
+
+  <link rel="stylesheet" href="../stylesheets/main.scss">
+</head>
+
+<body>
+   <!-- Navigation -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">MyPortfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+
+        <!-- Dropdown for Portfolio -->
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" id="portfolioDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Portfolio
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+            <li><a class="dropdown-item" href="portfolio.html">All Projects</a></li>
+            <li><a class="dropdown-item" href="case.html">Case Study</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="container my-5">
+  <h1>Coffee</h1>
+  <img src="images/coffeePage.png" class="img-fluid rounded mb-4" alt="Project screenshot">
+  <h3>Tools Used</h3>
+  <span class="badge bg-primary">HTML</span>
+  <span class="badge bg-primary">CSS</span>
+  <span class="badge bg-primary">W3 Schools</span>
+  <span class="badge bg-primary">Unsplash</span>
+  <span class="badge bg-primary">Adobe Color</span>
+  
+  <h3 class="mt-4">Description</h3>
+  <p>For my Web 1400 final, I designed and built a multi-page website that takes visitors on a journey through the history of coffee, its production process, and other fascinating details. This was my first multi-page build, and it pushed me to navigate the full development process while learning how to implement Flexbox effectively. The project was both a challenge and a milestone in my growth as a web developer.</p>
+  <p><strong>Challenges:</strong> One of the biggest challenges I faced with this project was building a multi-page site for the first time. I had to learn how to structure content across different pages and make sure everything was linked correctly. Another challenge was mastering Flexbox to create layouts that were both functional and visually appealing. Since I was still learning the full development process, I spent extra time troubleshooting and experimenting to ensure consistent styling and a smooth user experience across all pages. Overcoming these challenges taught me a lot about planning, layout design, and the workflow needed for larger web projects..<br>
+     <strong>What I Learned:</strong> Through this project, I learned how to structure a multi-page website, create responsive layouts with Flexbox, and troubleshoot challenges across pages—skills that strengthened my overall web development workflow.</p>
+
+  <a href="https://storied-muffin-603f26.netlify.app/" class="btn btn-primary">View Live</a>
+  <a href="#" class="btn btn-outline-dark">View Code</a>
+</div>
+
+  <!-- Footer -->
+ <footer>
+    <div class="container">
+      <p>&copy; 2025 Lillian Buck. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="./javascripts/main.js"></script>
+</body>
+</html>

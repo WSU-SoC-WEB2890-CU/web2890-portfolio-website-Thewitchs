@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="TODO: Portfolio website ...">
+
+  <link rel="stylesheet" href="../stylesheets/main.scss">
+</head>
+
+<body>
+   <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">MyPortfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+
+        <!-- Dropdown for Portfolio -->
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" id="portfolioDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Portfolio
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+            <li><a class="dropdown-item" href="portfolio.html">All Projects</a></li>
+            <li><a class="dropdown-item" href="case.html">Case Study</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="container my-5">
+  <h1>Web Understanding</h1>
+  <img src="images/webU.png" class="img-fluid rounded mb-4" alt="Project screenshot">
+  <h3>Tools Used</h3>
+  <span class="badge bg-primary">HTML</span>
+  <span class="badge bg-primary">CSS</span>
+  <span class="badge bg-primary">Adobe Color</span>
+  
+  <h3 class="mt-4">Description</h3>
+  <p>This project was my first attempt at building a multi-page website alone. The site highlights different career paths available with a degree in UX/UI and outlines the steps involved in coding a website from scratch. It was designed to showcase my ability to organize content across multiple pages while applying fundamental web development skills.</p>
+  <p><strong>Challenges:</strong> One of the main challenges I faced with this project was building a multi-page website for the first time. I had to figure out how to structure and link multiple pages while keeping the content clear and easy to navigate. Another challenge was presenting information about UX/UI careers and the steps to code a website in a way that was organized and engaging. I also focused on maintaining consistent design and layout across all pages, which helped me improve my attention to detail and overall web development skills.<br>
+     <strong>What I Learned</strong> This was my first multi-page website, and I learned how to structure and link pages, present information clearly, and maintain consistent design—skills that strengthened my web development abilities.</p>
+
+  <a href="https://lucent-pixie-fc5789.netlify.app/" class="btn btn-primary">View Live</a>
+  <a href="#" class="btn btn-outline-dark">View Code</a>
+</div>
+
+
+
+  <!-- Footer -->
+<footer>
+    <div class="container">
+      <p>&copy; 2025 Lillian Buck. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="./javascripts/main.js"></script>
+</body>
+</html>

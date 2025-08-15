@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="TODO: Portfolio website ...">
+
+  <link rel="stylesheet" href="../stylesheets/main.scss">
+</head>
+
+<body>
+   <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">MyPortfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+
+        <!-- Dropdown for Portfolio -->
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" id="portfolioDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Portfolio
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+            <li><a class="dropdown-item" href="portfolio.html">All Projects</a></li>
+            <li><a class="dropdown-item" href="case.html">Case Study</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="container my-5">
+  <h1>Sleep Recommendations</h1>
+  <img src="images/sleepder.png" class="img-fluid rounded mb-4" alt="Project screenshot">
+  <h3>Tools Used</h3>
+  <span class="badge bg-primary">HTML</span>
+  <span class="badge bg-primary">CSS</span>
+  <span class="badge bg-primary">JavaScript</span>
+  <span class="badge bg-primary">Unsplash</span>
+  <span class="badge bg-primary">Adobe Color</span>
+  
+  <h3 class="mt-4">Description</h3>
+  <p>TThis project demonstrates my ability to create a website with fully functional links and properly cited sources. It highlights my attention to detail in ensuring that all links navigate correctly and enhance the user experience. Additionally, it showcases my understanding of proper citation practices, reinforcing credibility and professionalism in web content. The project reflects both my technical skills and my commitment to accuracy and ethical web development practices.</p>
+  <p><strong>Challenges:</strong> One of the main challenges I faced with this project was ensuring all links worked correctly and directed users to the intended pages. I also focused on properly citing sources to maintain credibility, which required careful attention to detail. Balancing functionality with a clean, user-friendly design was another challenge, as I wanted the links and citations to enhance the site without disrupting the layout or flow.<br>
+     <strong>What I Learned:</strong> Through this project, I learned to create functional links, properly cite sources, and integrate these elements seamlessly into a clean and user-friendly website.</p>
+
+  <a href="https://cute-pie-8e1809.netlify.app/recommend.html" class="btn btn-primary">View Live</a>
+  <a href="#" class="btn btn-outline-dark">View Code</a>
+</div>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Lillian Buck. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="./javascripts/main.js"></script>
+</body>
+</html>
